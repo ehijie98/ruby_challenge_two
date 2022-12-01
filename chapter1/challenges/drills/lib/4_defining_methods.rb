@@ -25,84 +25,62 @@
 # takes no args (arguments)
 # returns 'hello'
 
-def say_hello
-    "hello"
-end
+
 
 # say_goodbye
 # takes no args
 # returns 'goodbye'
 
-def say_goodbye
-    "goodbye"
-end
+
 
 # say_hello_to
 # takes one string as an arg
 # example: the arg is `Sam`
 # returns `Hello, Sam`
 
-def say_hello_to(name)
-    "Hello, #{name}"
-end
+
 
 # say_goodbye_to
 # takes one string as an arg
 # example: the arg is `Sam`
 # returns `Goodbye, Sam`
 
-def say_goodbye_to(name)
-    "Goodbye, #{name}"
-end
+
 
 # square
 # takes one number as an arg
 # multiplies that number by itself
 # returns the new value
 
-def square(number)
-    number**2
-end
+
 
 # divisible_by_three?
 # takes one number as an arg
 # returns true if the number is divisible by three
 # returns false if the number is not divisible by three
 
-def divisible_by_three?(number)
-    if number % 3 == 0
-        true
-    else
-        false
-    end
-end
+
 
 # add
 # takes two numbers as args
 # adds them together
 # returns the total
 
-def add(num1, num2)
-    num1 + num2
-end
+
 
 # multiply
 # takes two numbers as args
 # multiplies one by the other
 # returns the result
 
-def multiply(num1, num2)
-    num1 * num2
-end
+
 
 # add_number_strings
 # takes two numbers as strings
 # converts them both to numbers
 # returns the total
 
-def add_number_strings(num_str1, num_str2)
-    num_str1.to_f + num_str2.to_f 
-end
+
 
 # multiply_number_strings
 # takes two numbers as strings for args
@@ -110,61 +88,34 @@ end
 # multiplies one by the other
 # returns the result
 
-def multiply_number_strings(num_str1, num_str2)
-    num_str1.to_f * num_str2.to_f 
-end
+
 
 # both_odd?
 # takes two numbers as args
 # returns true if both are odd
 # otherwise, returns false
 
-def both_odd?(num1, num2)
-    if num1.odd? && num2.odd? 
-        true
-    else
-        false
-    end
-end
+
 
 # both_even?
 # takes two numbers as args
 # returns true if both are even
 # otherwise, returns false
 
-def both_even?(num1, num2)
-    if num1.even? && num2.even? 
-        true
-    else
-        false
-    end
-end
+
 
 # one_odd?
 # takes two numbers as args
 # returns true if at least one of them is odd
 # otherwise, returns false
 
-def one_odd?(num1, num2)
-    if num1.odd? || num2.odd? 
-        true
-    else
-        false
-    end
-end
+
 
 # one_even?
 # takes two numbers as args
 # returns true if at least one of them is even
 # otherwise returns false
 
-def one_even?(num1, num2)
-    if num1.even? || num2.even? 
-        true
-    else
-        false
-    end
-end
 
 # rev_sym_caps
 # takes one string as an arg
@@ -172,9 +123,7 @@ end
 # converts it to a symbol
 # returns the symbol in block caps
 
-def rev_sym_caps(string)
-    string.reverse.to_sym.upcase
-end
+
 
 # truncate
 # takes one string as an arg
@@ -182,11 +131,3 @@ end
 # returns the first 10 chars followed by '...'
 # if the string is 10 chars or less
 # returns the whole string
-
-def truncate(string)
-    if string.length > 10
-        string[0, 10] + "..."
-    else
-        string
-    end 
-end

@@ -6,15 +6,6 @@
 # clue - you can check divisibility using modulo (%)
 def fizz_buzz(number)
   # your code goes here
-  if number % 15 == 0
-    "fizzbuzz"
-  elsif number % 3 == 0
-    "fizz"
-  elsif number % 5 == 0
-    "buzz"
-  else
-    "1"
-  end
 end
 
 # if the greeting is 'good morning'
@@ -25,13 +16,6 @@ end
 # return the greeting that was received
 def reply_to(greeting)
   # your code goes here
-  if greeting == "good morning"
-    "good morning to you too"
-  elsif greeting == "hello"
-    "hi"
-  else 
-    greeting
-  end
 end
 
 # when the number is greater than or equal to 10
@@ -40,11 +24,6 @@ end
 # return the number
 def deduct_10_if_possible(number)
   # your code goes here
-  if number >= 10
-    number - 10
-  else
-    number
-  end
 end
 
 # if the number is below 100
@@ -53,9 +32,4 @@ end
 # return the number
 def top_up_to_100(number)
   # your code goes here
-  if number < 100
-    100
-  else 
-    number 
-  end
 end
