@@ -15,6 +15,7 @@
 # returns the first element
 
 def first_element(array)
+  return array[0]
 end
 
 # second_element
@@ -22,6 +23,7 @@ end
 # returns the second element
 
 def second_element(array)
+  return array[1]
 end
 
 # last_element
@@ -29,6 +31,7 @@ end
 # returns the last element
 
 def last_element(array)
+  return array[-1]
 end
 
 # first_two_elements
@@ -36,6 +39,7 @@ end
 # returns the first two elements
 
 def first_two_elements(array)
+  return array[0,2]
 end
 
 # first_three_elements
@@ -43,6 +47,7 @@ end
 # returns the first three elements
 
 def first_three_elements(array)
+  return array[0,3]
 end
 
 # total
@@ -51,6 +56,7 @@ end
 # returns the total
 
 def total(array)
+  return array.sum
 end
 
 # lowest_number
@@ -58,6 +64,7 @@ end
 # returns the lowest value
 
 def lowest_number(array)
+  return array.min
 end
 
 # highest_number
@@ -65,6 +72,7 @@ end
 # returns the highest value
 
 def highest_number(array)
+  return array.max
 end
 
 # the_beatles
@@ -72,6 +80,7 @@ end
 # returns ['john', 'paul', 'george', 'ringo']
 
 def the_beatles
+  ["john", "paul", "george", "ringo"]
 end
 
 # i_joined_the_beatles
@@ -80,6 +89,7 @@ end
 # returns ['john', 'paul', 'george', 'ringo', 'freda']
 
 def i_joined_the_beatles(string)
+  the_beatles << string
 end
 
 # we_joined_the_beatles
@@ -88,6 +98,7 @@ end
 # returns ['john', 'paul', 'george', 'ringo', 'sam', 'alex']
 
 def we_joined_the_beatles(array)
+  return the_beatles.concat(array)
 end
 
 # remove_nils_from_array
@@ -95,6 +106,8 @@ end
 # returns the array, minus any nils
 
 def remove_nils_from_array(array)
+  array.delete(nil)
+  return array
 end
 
 
@@ -104,6 +117,7 @@ end
 # returns [1,2,3,1,2,3]
 
 def double_array(array)
+  return array.concat(array)
 end
 
 # unique_elements
@@ -112,6 +126,7 @@ end
 # returns [1,2,3]
 
 def unique_elements(array)
+  return array.uniq
 end
 
 # add_to_array
@@ -120,6 +135,7 @@ end
 # returns the new array
 
 def add_to_array(array, string)
+  return array.push(string)
 end
 
 ## Hashes
@@ -135,6 +151,9 @@ end
 # returns 'miss piggy'
 
 def get_band_member(key)
+  band_members = {'vocalist' => 'miss piggy', 'lead_guitar' => 'scooter'}
+  # your code goes here
+  return band_members[key]
 end
 
 
@@ -148,6 +167,9 @@ end
 # returns 2.99
 
 def query_product(string)
+  product = {'price' => 2.99, 'name' => 'chocolate', 'ingredients' => ['cocoa', 'nuts', 'mylk']}
+  # your code goes here
+  return product[string]
 end
 
 ### Focus: Adding key value pairs to hashes
@@ -162,6 +184,9 @@ end
 # returns {'vocalist' => 'miss piggy', 'lead_guitar' => 'scooter', 'drummer' => 'kermit'}
 
 def new_drummer(string)
+  band_members = {'vocalist' => 'miss piggy', 'lead_guitar' => 'scooter'}
+  band_members["drummer"] = string
+  return band_members
 end
 
 # touch_in
@@ -171,6 +196,10 @@ end
 # returns a hash with key-value pairs for 'entrypoint' and 'time'
 
 def touch_in(name, date_time)
+  hash = Hash.new
+  hash['entrypoint'] = name
+  hash['time'] = date_time
+  return hash
 end
 
 ### Focus: Changing the value of an existing key-value pair in a hash
@@ -184,6 +213,9 @@ end
 # returns {'vocalist' => 'waldo', 'lead_guitar' => 'scooter'}
 
 def new_vocalist(string)
+  band_members = {'vocalist' => 'miss piggy', 'lead_guitar' => 'scooter'}
+  band_members['vocalist'] = string
+  return band_members
 end
 
 ### Focus: Using the Ruby docs to find the right method/s
@@ -193,6 +225,7 @@ end
 # returns the values
 
 def all_values(hash)
+  hash.values
 end
 
 # all_keys
@@ -200,6 +233,7 @@ end
 # returns the keys
 
 def all_keys(hash)
+  hash.keys
 end
 
 # remove_nils_from_hash
@@ -208,6 +242,7 @@ end
 # returns the remaining key-value pairs as a hash
 
 def remove_nils_from_hash(hash)
+  hash.keep_if {|key, value| value != nil}
 end
 
 # key_value_swap
@@ -216,6 +251,12 @@ end
 # returns the new hash
 
 def key_value_swap(hash)
+  hash.invert
 end
 
-
+#experimental way for key_value_swap
+def key_value_swap(hash)
+  hash2 = Hash.new
+  hash.each {|key, value| hash2[value] = key}
+  return hash2
+end
