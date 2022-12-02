@@ -13,6 +13,7 @@
 # the method should return 'HELLO WORLD'
 def block_caps_a_string(string)
   # your code goes here
+  string.upcase
 end
 
 # TASK: define a method that returns a string that is the same as a given string, but converted to lower-case characters.
@@ -21,6 +22,7 @@ end
 # the method should return 'hello world'
 def lower_case_a_string(string)
   # your code goes here
+  string.downcase
 end
 
 # TASK: define a method that returns a number which is the count of all characters in a given string.
@@ -29,6 +31,7 @@ end
 # the method should return 5
 def length_of_a_string(string)
   # your code goes here
+  string.length
 end
 
 # TASK: define a method that returns a string that reverses the order of the characters in a given string.
@@ -37,6 +40,7 @@ end
 # the method should return 'olleh'
 def reverse_a_string(string)
   # your code goes here
+  string.reverse
 end
 
 # TASK: define a method that returns a string that inverts the case of each character in a given string.
@@ -45,6 +49,7 @@ end
 # the method should return 'hELLO wORLD'
 def swap_the_case_of_a_string(string)
   # your code goes here
+  string.swapcase
 end
 
 # TASK: define a method that returns a symbol that has the same characters (single words for now).
@@ -53,6 +58,7 @@ end
 # the method should return :hello
 def string_to_symbol(string)
   # your code goes here
+  string.to_sym
 end
 
 # Integer methods
@@ -65,6 +71,7 @@ end
 # the method should return false
 def is_integer_odd?(integer)
   # your code goes here
+  integer.odd?
 end
 
 # TASK: define a method that returns a boolean evaluates if a given integer is even.
@@ -75,6 +82,7 @@ end
 # the method should return true
 def is_integer_even?(integer)
   # your code goes here
+  integer.even?
 end
 
 # TASK: define a method that returns a float converted from a given integer.
@@ -83,6 +91,7 @@ end
 # the method should return 1.0
 def integer_to_float(integer)
   # your code goes here
+  integer.to_f 
 end
 
 # TASK: define a method that returns a string equivalent of a given integer.
@@ -91,6 +100,7 @@ end
 # the method should return '1'
 def integer_to_string(integer)
   # your code goes here
+  integer.to_s
 end
 
 # TASK: define a method that returns an integer that is one less than a given integer (don't worry about negative numbers for now).
@@ -99,6 +109,7 @@ end
 # the method should return 1
 def return_previous_integer(integer)
   # your code goes here
+  integer.pred
 end
 
 
@@ -108,6 +119,7 @@ end
 # the method should return 2
 def return_next_integer(integer)
   # your code goes here
+  integer.succ
 end
 
 # Float methods
@@ -118,6 +130,7 @@ end
 # the method should return 2.0
 def round_up(float)
   # your code goes here
+  float.ceil
 end
 
 # TASK: define a method that returns a float that is rounded down from a given float.
@@ -126,6 +139,7 @@ end
 # the method should return 1.0
 def round_down(float)
   # your code goes here
+  float.floor
 end
 
 # TASK: define a method that returns a string that is equivalent to a given float.
@@ -134,6 +148,7 @@ end
 # the method should return '1.1'
 def float_to_string(float)
   # your code goes here
+  float.to_s
 end
 
 # TASK: define a method that returns a integer that is converted from a given float.
@@ -142,6 +157,7 @@ end
 # the method should return 1
 def float_to_integer(float)
   # your code goes here
+  float.to_i
 end
 
 # TASK: define a method that returns a boolean that evaluates whether or not a given float is positive.
@@ -151,6 +167,7 @@ end
 # when the float is -1.1
 # the method should return false
 def float_is_positive?(float)
+  float.positive?
   # your code goes here
 end
 
@@ -162,6 +179,7 @@ end
 # the method should return true
 def float_is_negative?(float)
   # your code goes here
+  float.negative?
 end
 
 # Symbol methods
@@ -172,6 +190,7 @@ end
 # the method should return :hELLO
 def swap_the_case_of_a_symbol(symbol)
   # your code goes here
+  symbol.swapcase
 end
 
 # TASK: define a method that returns a string that is the equivalent of a given symbol.
@@ -180,6 +199,7 @@ end
 # the method should return 'hello'
 def symbol_to_string(symbol)
   # your code goes here
+  symbol.to_s
 end
 
 # TASK: define a method that returns a symbol that converts every character of a given symbol to upper case.
@@ -188,6 +208,7 @@ end
 # the method should return :HELLO
 def block_caps_a_symbol(symbol)
   # your code goes here
+  symbol.upcase
 end
 
 # TASK: define a method that returns a symbol that converts every character of a given symbol to lower case.
@@ -196,6 +217,7 @@ end
 # the method should return :hello
 def lower_case_a_symbol(symbol)
   # your code goes here
+  symbol.downcase
 end
 
 # Boolean methods
@@ -208,5 +230,6 @@ end
 # the method should return false
 def boolean_to_string(boolean)
   # your code goes here
+  boolean.to_s
 end
 
