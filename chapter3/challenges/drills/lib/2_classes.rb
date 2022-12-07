@@ -197,6 +197,7 @@ class Cohort
   def employed_by(employer)
     @students.select {|student| student['employer'] == employer}
   end
+  
 end
 
 

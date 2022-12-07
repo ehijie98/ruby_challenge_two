@@ -89,8 +89,8 @@ password_manager = PasswordManager2.new
  p password_manager.add('Twitter', 'asdfgh456')
  p password_manager.add('Instagram', 'zxcvbn123')
  p password_manager.all
-#  p password_manager.sort_by('service')
-#  p password_manager.sort_by('added_on')
+ p password_manager.sort_by('service')
+ p password_manager.sort_by('added_on')
  p password_manager.update('Twitter', 'qwerty123')
  p password_manager.password_for('Twitter')
  p password_manager.all

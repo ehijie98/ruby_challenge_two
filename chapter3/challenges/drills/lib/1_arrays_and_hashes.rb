@@ -37,6 +37,7 @@ def highest_squared(array)
     array.sort
     array[-1] ** 2
 end
+
 # Hashes I
 
 # values_summed
