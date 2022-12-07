@@ -24,6 +24,7 @@ class PasswordManager2
 
     end 
 
+    
     # These should add the following key, value pairs into the empty hash given that the password and service are both unique
     # password_manager = PasswordManager2.new
     # password_manager.add('Twitter', 'asdfgh4561)
