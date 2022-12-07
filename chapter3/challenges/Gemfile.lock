@@ -20,10 +20,11 @@ GEM
 PLATFORMS
   arm64-darwin-21
   x86_64-darwin-21
+  x86_64-darwin-22
 
 DEPENDENCIES
   rspec
   timecop
 
 BUNDLED WITH
-   2.2.15
+   2.3.26
