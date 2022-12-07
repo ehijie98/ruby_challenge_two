@@ -107,7 +107,7 @@ end
 
 def remove_nils_from_array(array)
   array.delete(nil)
-  return array
+  array
 end
 
 

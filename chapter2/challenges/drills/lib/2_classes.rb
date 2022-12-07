@@ -36,6 +36,7 @@ class Greeter
   end
 end
 
+
 # Animal
 # no methods required
 

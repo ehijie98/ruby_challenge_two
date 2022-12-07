@@ -2,7 +2,6 @@ class PasswordManager
 
     # to store the hash inside an instance variable
     def initialize
-        #empty
         @hash = Hash.new
     end
     
@@ -11,7 +10,6 @@ class PasswordManager
 
     # add method that takes 2 strings as arg
     def add(service, password)
-        # empty
         if password.length > 7 && password.match(/[!@£$%^&*()"':;]/)
             @hash[service] = password
         end
@@ -24,7 +22,6 @@ class PasswordManager
 
     # password_for method that takes 1 string as arg
     def password_for(service)
-        # empty
         @hash[service]
     end
 
@@ -35,7 +32,6 @@ class PasswordManager
 
     # services method that takes zero arg
     def services
-        # empty
         @hash.keys
     end
 
